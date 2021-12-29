@@ -10,14 +10,14 @@ import UIKit
 class FXArticleViewController: UIViewController {
 
     @IBOutlet private weak var articleSearchBar: UISearchBar!
-    @IBOutlet private weak var articleListTable: UITableView!
+    @IBOutlet internal weak var articleListTable: UITableView!
     var articleData = [Data]()
     var navigationTitle: String?
     private var originalDataOfArticles = [Data]()
     private var originalDataOfDailyBriefings = [[Data]]()
     var dailyBriefingData: DailyBriefingData?
     private var dailyBriefValues: [DailyBriefings] = [.eu, .asia, .us]
-    private var dailyBriefing = [[Data]]()
+    internal var dailyBriefing = [[Data]]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.backButtonTitle = ""
