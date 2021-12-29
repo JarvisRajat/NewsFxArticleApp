@@ -1,0 +1,6 @@
+framework module Pods_NewsFxArticleApp {
+  umbrella header "Pods-NewsFxArticleApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

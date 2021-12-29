@@ -1,0 +1,6 @@
+framework module Pods_NewsFxArticleApp_NewsFxArticleAppUITests {
+  umbrella header "Pods-NewsFxArticleApp-NewsFxArticleAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

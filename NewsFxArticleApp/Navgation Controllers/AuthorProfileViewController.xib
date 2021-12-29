@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorProfileViewController" customModule="NewsFxArticleApp" customModuleProvider="target">
+            <connections>
+                <outlet property="authorBio" destination="oaq-xp-llk" id="Lbg-yC-5uN"/>
+                <outlet property="authorDescription" destination="QNX-R5-2jU" id="uGZ-jr-xaD"/>
+                <outlet property="authorEmail" destination="jdi-aq-SM7" id="ivT-k1-NXt"/>
+                <outlet property="authorFb" destination="ybX-9X-WSz" id="wAJ-aq-R6Y"/>
+                <outlet property="authorGooglePlus" destination="iLS-c4-NPU" id="kPb-dK-4I1"/>
+                <outlet property="authorName" destination="AO9-Un-Nav" id="0OF-9A-ImB"/>
+                <outlet property="authorPhone" destination="XmE-TN-JOm" id="FfG-XN-Cbn"/>
+                <outlet property="authorTitle" destination="Eqo-4q-tXD" id="0as-Ea-Tap"/>
+                <outlet property="authorTwitter" destination="Mc4-w7-oin" id="1ae-CC-w4c"/>
+                <outlet property="contentView" destination="QKC-c2-prO" id="IP8-kI-iOW"/>
+                <outlet property="feed" destination="z8n-cR-Kft" id="jAf-PO-za7"/>
+                <outlet property="profilePicture" destination="dDc-l1-UYt" id="BXw-X8-565"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcu-bH-lvl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKC-c2-prO">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="481.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dDc-l1-UYt">
+                                    <rect key="frame" x="107" y="8" width="200" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="dDc-l1-UYt" secondAttribute="height" multiplier="1:1" id="ijR-8A-szR"/>
+                                        <constraint firstAttribute="height" constant="200" id="p2b-Ly-jJ6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO9-Un-Nav">
+                                    <rect key="frame" x="16" y="216" width="382" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqo-4q-tXD">
+                                    <rect key="frame" x="16" y="260" width="382" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdi-aq-SM7">
+                                    <rect key="frame" x="16" y="294" width="382" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmE-TN-JOm">
+                                    <rect key="frame" x="16" y="328" width="382" height="26"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNX-R5-2jU">
+                                    <rect key="frame" x="16" y="362" width="382" height="32.5"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zKY-M4-mIY">
+                                    <rect key="frame" x="31.5" y="404.5" width="351" height="67"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaq-xp-llk">
+                                            <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="oaq-xp-llk" secondAttribute="height" multiplier="1:1" id="H1C-g9-npe"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="bio"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="authorBioAction:" destination="-1" eventType="touchUpInside" id="g2M-os-Oel"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybX-9X-WSz">
+                                            <rect key="frame" x="71" y="0.0" width="67" height="67"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ybX-9X-WSz" secondAttribute="height" multiplier="1:1" id="9bM-9Y-Fqb"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="facebook"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="authorFBAction:" destination="-1" eventType="touchUpInside" id="Lso-Hl-48V"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc4-w7-oin">
+                                            <rect key="frame" x="142" y="0.0" width="67" height="67"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="67" id="9iZ-w3-Rdf"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="twitter"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="authorTwitterAction:" destination="-1" eventType="touchUpInside" id="WwK-xf-m05"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-c4-NPU">
+                                            <rect key="frame" x="213" y="0.0" width="67" height="67"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="iLS-c4-NPU" secondAttribute="height" multiplier="1:1" id="TbE-mD-u47"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="google_plus"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="authorGooglePlusAction:" destination="-1" eventType="touchUpInside" id="8Hs-BN-paR"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8n-cR-Kft">
+                                            <rect key="frame" x="284" y="0.0" width="67" height="67"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="z8n-cR-Kft" secondAttribute="height" multiplier="1:1" id="xYj-0A-JVd"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="feed"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="feedAction:" destination="-1" eventType="touchUpInside" id="Kok-BS-3Pb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Eqo-4q-tXD" firstAttribute="trailing" secondItem="AO9-Un-Nav" secondAttribute="trailing" id="1Q8-cn-lSJ"/>
+                                <constraint firstItem="QNX-R5-2jU" firstAttribute="leading" secondItem="XmE-TN-JOm" secondAttribute="leading" id="30j-z2-qx7"/>
+                                <constraint firstItem="XmE-TN-JOm" firstAttribute="trailing" secondItem="jdi-aq-SM7" secondAttribute="trailing" id="7xR-7q-auq"/>
+                                <constraint firstItem="Mc4-w7-oin" firstAttribute="centerX" secondItem="QNX-R5-2jU" secondAttribute="centerX" id="C78-ff-V4m"/>
+                                <constraint firstItem="jdi-aq-SM7" firstAttribute="trailing" secondItem="Eqo-4q-tXD" secondAttribute="trailing" id="DEP-js-eh2"/>
+                                <constraint firstItem="dDc-l1-UYt" firstAttribute="centerX" secondItem="AO9-Un-Nav" secondAttribute="centerX" id="GD5-A2-zgh"/>
+                                <constraint firstItem="jdi-aq-SM7" firstAttribute="leading" secondItem="Eqo-4q-tXD" secondAttribute="leading" id="KM5-7C-t5K"/>
+                                <constraint firstItem="XmE-TN-JOm" firstAttribute="leading" secondItem="jdi-aq-SM7" secondAttribute="leading" id="Nd0-L1-vDw"/>
+                                <constraint firstItem="QNX-R5-2jU" firstAttribute="top" secondItem="XmE-TN-JOm" secondAttribute="bottom" constant="8" id="SKx-0L-zbO"/>
+                                <constraint firstItem="QNX-R5-2jU" firstAttribute="trailing" secondItem="XmE-TN-JOm" secondAttribute="trailing" id="ZQd-7B-Eh3"/>
+                                <constraint firstItem="zKY-M4-mIY" firstAttribute="top" secondItem="QNX-R5-2jU" secondAttribute="bottom" constant="10" id="cp8-RE-RfY"/>
+                                <constraint firstAttribute="bottom" secondItem="zKY-M4-mIY" secondAttribute="bottom" constant="10" id="dyk-BZ-99Y"/>
+                                <constraint firstItem="XmE-TN-JOm" firstAttribute="top" secondItem="jdi-aq-SM7" secondAttribute="bottom" constant="8" id="gd0-x9-cUQ"/>
+                                <constraint firstItem="AO9-Un-Nav" firstAttribute="top" secondItem="dDc-l1-UYt" secondAttribute="bottom" constant="8" id="r68-TN-31r"/>
+                                <constraint firstItem="jdi-aq-SM7" firstAttribute="top" secondItem="Eqo-4q-tXD" secondAttribute="bottom" constant="8" id="rOE-E3-GZD"/>
+                                <constraint firstItem="AO9-Un-Nav" firstAttribute="leading" secondItem="QKC-c2-prO" secondAttribute="leading" constant="16" id="rsZ-oF-pU3"/>
+                                <constraint firstItem="dDc-l1-UYt" firstAttribute="top" secondItem="QKC-c2-prO" secondAttribute="top" constant="8" id="t2q-r9-Sxx"/>
+                                <constraint firstItem="Eqo-4q-tXD" firstAttribute="top" secondItem="AO9-Un-Nav" secondAttribute="bottom" constant="8" id="u4j-E4-lla"/>
+                                <constraint firstAttribute="trailing" secondItem="AO9-Un-Nav" secondAttribute="trailing" constant="16" id="xGs-ik-s53"/>
+                                <constraint firstItem="Eqo-4q-tXD" firstAttribute="leading" secondItem="AO9-Un-Nav" secondAttribute="leading" id="yVY-o4-ouo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="QKC-c2-prO" firstAttribute="top" secondItem="Vcu-bH-lvl" secondAttribute="top" id="1ek-p6-PNH"/>
+                        <constraint firstItem="QKC-c2-prO" firstAttribute="leading" secondItem="Vcu-bH-lvl" secondAttribute="leading" id="Tzb-IA-MUB"/>
+                        <constraint firstAttribute="bottom" secondItem="QKC-c2-prO" secondAttribute="bottom" id="fKd-zu-SNY"/>
+                        <constraint firstAttribute="trailing" secondItem="QKC-c2-prO" secondAttribute="trailing" id="fQy-2S-jAF"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="sD8-zp-nQr"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="VDR-JN-fso"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Vcu-bH-lvl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GMO-gM-gZF"/>
+                <constraint firstItem="Vcu-bH-lvl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ya9-Sq-70R"/>
+                <constraint firstItem="Vcu-bH-lvl" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="dfx-1C-Fr3"/>
+                <constraint firstItem="QKC-c2-prO" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="qWD-lP-gRk"/>
+                <constraint firstItem="Vcu-bH-lvl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uDi-B1-Ulk"/>
+            </constraints>
+            <point key="canvasLocation" x="95.652173913043484" y="62.946428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bio" width="50" height="50"/>
+        <image name="facebook" width="50" height="50"/>
+        <image name="feed" width="50" height="50"/>
+        <image name="google_plus" width="50" height="50"/>
+        <image name="twitter" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
